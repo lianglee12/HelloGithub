@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9915A475-ADA6-4800-9AD7-764499B498F7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_7._17qq</RootNamespace>
+    <AssemblyName>7.17qq</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="A">
+      <HintPath>..\..\A\A\bin\Debug\A.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NewFolder1\ByteBuffer.cs" />
+    <Compile Include="NewFolder1\debug.cs" />
+    <Compile Include="NewFolder1\EventDispatch.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game .Designer.cs">
+      <DependentUpon>Game .cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameRoom.Designer.cs">
+      <DependentUpon>GameRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\GameRoomLogicBusiness.cs" />
+    <Compile Include="Load.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Load.Designer.cs">
+      <DependentUpon>Load.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\MainLogicBusiness.cs" />
+    <Compile Include="NewFolder1\MessageQueue.cs" />
+    <Compile Include="NewFolder1\Player.cs" />
+    <Compile Include="NewFolder1\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegWindow.Designer.cs">
+      <DependentUpon>RegWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room.Designer.cs">
+      <DependentUpon>Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\U3DSocket.cs" />
+    <Compile Include="UserDaskTop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserDaskTop.Designer.cs">
+      <DependentUpon>UserDaskTop.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game .resx">
+      <DependentUpon>Game .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameRoom.resx">
+      <DependentUpon>GameRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Load.resx">
+      <DependentUpon>Load.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegWindow.resx">
+      <DependentUpon>RegWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Room.resx">
+      <DependentUpon>Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDaskTop.resx">
+      <DependentUpon>UserDaskTop.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nod32z.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
